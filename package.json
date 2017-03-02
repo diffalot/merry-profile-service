@@ -21,7 +21,9 @@
     "levelup": "^1.3.3",
     "merry": "github:shipharbor/merry#fix-cors",
     "mongodown": "^1.1.0",
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "simple-websocket": "^5.0.0",
+    "socket.io": "^1.7.3"
   },
   "devDependencies": {
     "eslint": "^3.16.1",

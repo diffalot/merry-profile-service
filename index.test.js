@@ -4,8 +4,10 @@ const AUTH_URL = process.env.AUTH_URL
 
 const test = require('tape')
 const request = require('request')
+// const Socket = require('simple-websocket')
 
 const API_URL = `http://localhost:${process.env.PORT}`
+// const WS_URL = process.env.WS_URL
 
 require('./')
 
@@ -91,7 +93,14 @@ getToken(function (err, auth) {
       t.end()
     })
   })
-
+/*
+  test('WS connection is established', function (t) {
+    let socket = new Socket(WS_URL)
+    socket.on('connect', function (arg) {
+      console.log('test connection', arg)
+    })
+  })
+*/
   test('app exits', function (t) {
     t.ok(true, 'app will exit')
     t.end()
